@@ -25,8 +25,11 @@ print "Total New Mails : %s (%s bytes)" % pop3_stat
 print "\n\n===\nLatest Mail\n===\n\n"
 
 ## fetch the top mail
-latest_email = pop3_mail.retr(0)
+latest_email = pop3_mail.retr(1)
 
 ## print the message
-print latest_email[1]
+print latest_email[3]
+#        print mail
+#pop3_mail.dele(1)
+
 
